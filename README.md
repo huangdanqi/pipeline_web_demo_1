@@ -6,6 +6,7 @@
  
  3)python3 pipeline_web.py gsm -gm GSM613385 gse -ge GSE117702 -o 0406_03 ###备注：测试一个gse，一个gsm  报错！！！
 
-# 流程图!
+# 流程图
+![image](flow_chart.png)
 
 
