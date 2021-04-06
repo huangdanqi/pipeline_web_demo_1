@@ -17,7 +17,7 @@
 <ol>
 <li>路径问题解决</li>
 在normalize.py 把browser = webdriver.Chrome(options=option) 换成 browser = webdriver.Chrome(executable_path=r'D:\setup\anaconda\Scripts\chromedriver.exe',options=option) executable_path是chromedriver.exe 安装问题
-<li>版本问题<li>
+<li>版本问题</li>
 对应chrome版本的chromedriver
 </ol>
 
