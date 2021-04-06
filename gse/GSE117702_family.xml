@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Iris</First><Middle>Felicitas</Middle><Last>Macheleidt</Last></Person>
+    <Email>iris.macheleidt@uk-koeln.de</Email>
+    <Department>Institute for Pathology</Department>
+    <Organization>University Hopsital Cologne</Organization>
+    <Address>
+      <Line>Kerpenerstr. 63</Line>
+      <City>Cologne</City>
+      <Zip-Code>50937</Zip-Code>
+      <Country>Germany</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization></Organization>
+    <Email>geo@ncbi.nlm.nih.gov, support@affymetrix.com</Email>
+    <Phone>888-362-2447</Phone>
+    <Organization>Affymetrix, Inc.</Organization>
+    <Address>
+      <City>Santa Clara</City>
+      <State>CA</State>
+      <Zip-Code>95051</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+    <Web-Link>http://www.affymetrix.com/index.affx</Web-Link>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Priya</First><Last>Dalvi</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Margarete</First><Last>Odenthal</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL16686">
+    <Status database="GEO">
+      <Submission-Date>2013-02-14</Submission-Date>
+      <Release-Date>2013-02-14</Release-Date>
+      <Last-Update-Date>2020-02-21</Last-Update-Date>
+    </Status>
+    <Title>[HuGene-2_0-st] Affymetrix Human Gene 2.0 ST Array [transcript (gene) version]</Title>
+    <Accession database="GEO">GPL16686</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>commercial</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer>Affymetrix</Manufacturer>
+    <Manufacture-Protocol>
+See manufacturer's web site
+
+    </Manufacture-Protocol>
+    <Description>
+Affymetrix submissions are typically submitted to GEO using the GEOarchive method described at http://www.ncbi.nlm.nih.gov/projects/geo/info/geo_affy.html
+
+November 15, 2012: HuGene-2_0-st-v1.na33.hg19.transcript.csv
+    </Description>
+    <Relation type="Alternative to" target="GPL17930" comment="alternative CDF" />
+    <Relation type="Alternative to" target="GPL18476" comment="alternative CDF" />
+    <Relation type="Alternative to" target="GPL19803" comment="alternative CDF [hugene20st_Hs_ENTREZG, Brainarray version 18.0.0]" />
+    <Relation type="Alternative to" target="GPL20103" comment="alternative CDF [hugene20st_Hs_ENTREZG, Brainarray version 19.0.0]" />
+    <Relation type="Alternative to" target="GPL21563" comment="alternative CDF" />
+    <Relation type="Alternative to" target="GPL17889" comment="alternative CDF [HuGene20stv1_Hs_ENTREZG_16.0.0]" />
+    <Relation type="Alternative to" target="GPL24989" comment="alternative CDF [HuGene20stv1_Hs_ENTREZG_22.0.0]" />
+    <Relation type="Alternative to" target="GPL25381" comment="alternative CDF [HuGene20stv1_Hs_ENTREZG_21.0.0]" />
+    <Relation type="Alternative to" target="GPL25483" comment="Gene symbol version" />
+    <Relation type="Alternative to" target="GPL26088" comment="alternative CDF [Hugene20st_Hs_ENST_19.0.0]" />
+    <Relation type="Alternative to" target="GPL27949" comment="alternative CDF [HuGene20st_Hs_ENTREZG_24.0.0]" />
+    <Relation type="Alternative to" target="GPL26944" comment="alternative CDF [hugene20st_Hs_ENTREZG, Brainarray version 23]" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>transcript_cluster_id </Description>
+        <Link-Prefix>https://www.affymetrix.com/LinkServlet?array=HuGene-1_0-st-v1&amp;probeset=</Link-Prefix>
+      </Column>
+      <Column position="2">
+        <Name>RANGE_STRAND</Name>
+        <Description>strand  (+|-)</Description>
+      </Column>
+      <Column position="3">
+        <Name>RANGE_START</Name>
+        <Description>start  (integer). Coordinates are standard 1-based (length=stop-start+1).</Description>
+      </Column>
+      <Column position="4">
+        <Name>RANGE_END</Name>
+      </Column>
+      <Column position="5">
+        <Name>total_probes</Name>
+        <Description>Total number of probes contained by this transcript cluster.</Description>
+      </Column>
+      <Column position="6">
+        <Name>GB_ACC</Name>
+        <Description>GenBank and RefSeq Accessions from mrna_assignment column </Description>
+        <Link-Prefix>http://www.ncbi.nlm.nih.gov/nuccore/?term=</Link-Prefix>
+      </Column>
+      <Column position="7">
+        <Name>SPOT_ID</Name>
+        <Description>genomic location of the transcript cluster in the version of the genome assembly used at annotation time. Coordinates are standard 1-based (length=stop-start+1).</Description>
+      </Column>
+      <Column position="8">
+        <Name>RANGE_GB</Name>
+        <Description>NCBI RefSeq for chromosome of current build</Description>
+      </Column>
+    <External-Data rows="53981">
+GPL16686-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM3307398">
+    <Status database="GEO">
+      <Submission-Date>2018-07-26</Submission-Date>
+      <Release-Date>2018-07-27</Release-Date>
+      <Last-Update-Date>2018-07-27</Last-Update-Date>
+    </Status>
+    <Title>PC9 Untreated rep1</Title>
+    <Accession database="GEO">GSM3307398</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Untreated PC9 cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lung
+      </Characteristics>
+      <Treatment-Protocol>
+24hours post plating medium was changed to one containng 2µM HCI-2509. After 48hours, cells were harvested to isolate total RNA
+      </Treatment-Protocol>
+      <Growth-Protocol>
+PC9 cells were cultured in DMEM media supplemented with 10% FCS. Cells were seeded out at a density of 2 x 10^6.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was exctraced using the automated isolation kit AS-1280 (Promega) in the Maxwell-16 (Promega) according to the manufacturer´s protocol.
+      </Extract-Protocol>
+      <Label>None</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according the manufacturer´s protocol of Applause® WT-Amp ST System (NuGene®; San Carlos, USA) using 100ng of total RNA
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+4.1µg of biotinylated cDNA were hybridized for 16 hr at 45C on a huGene 2.0 St Array Chip. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneChip Scanner G3000 7G
+    </Scan-Protocol>
+    <Description>
+Gene expression data from PC9 NSCLC cells
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix ® Transcriptome Analysis Console using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 100.
+    </Data-Processing>
+    <Platform-Ref ref="GPL16686" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307398/suppl/GSM3307398_ODE4_1_HuGene-2_0-st_.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307398/suppl/GSM3307398_ODE4_1_HuGene-2_0-st_.rma-gene-full.chp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="53617">
+GSM3307398-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM3307399">
+    <Status database="GEO">
+      <Submission-Date>2018-07-26</Submission-Date>
+      <Release-Date>2018-07-27</Release-Date>
+      <Last-Update-Date>2018-07-27</Last-Update-Date>
+    </Status>
+    <Title>PC9 Untreated rep2</Title>
+    <Accession database="GEO">GSM3307399</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Untreated PC9 cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lung
+      </Characteristics>
+      <Treatment-Protocol>
+24hours post plating medium was changed to one containng 2µM HCI-2509. After 48hours, cells were harvested to isolate total RNA
+      </Treatment-Protocol>
+      <Growth-Protocol>
+PC9 cells were cultured in DMEM media supplemented with 10% FCS. Cells were seeded out at a density of 2 x 10^6.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was exctraced using the automated isolation kit AS-1280 (Promega) in the Maxwell-16 (Promega) according to the manufacturer´s protocol.
+      </Extract-Protocol>
+      <Label>None</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according the manufacturer´s protocol of Applause® WT-Amp ST System (NuGene®; San Carlos, USA) using 100ng of total RNA
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+4.1µg of biotinylated cDNA were hybridized for 16 hr at 45C on a huGene 2.0 St Array Chip. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneChip Scanner G3000 7G
+    </Scan-Protocol>
+    <Description>
+Gene expression data from PC9 NSCLC cells
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix ® Transcriptome Analysis Console using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 100.
+    </Data-Processing>
+    <Platform-Ref ref="GPL16686" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307399/suppl/GSM3307399_ODE4_2_HuGene-2_0-st_.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307399/suppl/GSM3307399_ODE4_2_HuGene-2_0-st_.rma-gene-full.chp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="53617">
+GSM3307399-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM3307400">
+    <Status database="GEO">
+      <Submission-Date>2018-07-26</Submission-Date>
+      <Release-Date>2018-07-27</Release-Date>
+      <Last-Update-Date>2018-07-27</Last-Update-Date>
+    </Status>
+    <Title>PC9 Untreated rep3</Title>
+    <Accession database="GEO">GSM3307400</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Untreated PC9 cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lung
+      </Characteristics>
+      <Treatment-Protocol>
+24hours post plating medium was changed to one containng 2µM HCI-2509. After 48hours, cells were harvested to isolate total RNA
+      </Treatment-Protocol>
+      <Growth-Protocol>
+PC9 cells were cultured in DMEM media supplemented with 10% FCS. Cells were seeded out at a density of 2 x 10^6.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was exctraced using the automated isolation kit AS-1280 (Promega) in the Maxwell-16 (Promega) according to the manufacturer´s protocol.
+      </Extract-Protocol>
+      <Label>None</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according the manufacturer´s protocol of Applause® WT-Amp ST System (NuGene®; San Carlos, USA) using 100ng of total RNA
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+4.1µg of biotinylated cDNA were hybridized for 16 hr at 45C on a huGene 2.0 St Array Chip. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneChip Scanner G3000 7G
+    </Scan-Protocol>
+    <Description>
+Gene expression data from PC9 NSCLC cells
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix ® Transcriptome Analysis Console using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 100.
+    </Data-Processing>
+    <Platform-Ref ref="GPL16686" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307400/suppl/GSM3307400_ODE4_3_HuGene-2_0-st_.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307400/suppl/GSM3307400_ODE4_3_HuGene-2_0-st_.rma-gene-full.chp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="53617">
+GSM3307400-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM3307401">
+    <Status database="GEO">
+      <Submission-Date>2018-07-26</Submission-Date>
+      <Release-Date>2018-07-27</Release-Date>
+      <Last-Update-Date>2018-07-27</Last-Update-Date>
+    </Status>
+    <Title>PC9 HCI-2509 rep1</Title>
+    <Accession database="GEO">GSM3307401</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PC9 cells treated with 2µM HCI-2509</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lung
+      </Characteristics>
+      <Treatment-Protocol>
+24hours post plating medium was changed to one containng 2µM HCI-2509. After 48hours, cells were harvested to isolate total RNA
+      </Treatment-Protocol>
+      <Growth-Protocol>
+PC9 cells were cultured in DMEM media supplemented with 10% FCS. Cells were seeded out at a density of 2 x 10^6.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was exctraced using the automated isolation kit AS-1280 (Promega) in the Maxwell-16 (Promega) according to the manufacturer´s protocol.
+      </Extract-Protocol>
+      <Label>None</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according the manufacturer´s protocol of Applause® WT-Amp ST System (NuGene®; San Carlos, USA) using 100ng of total RNA
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+4.1µg of biotinylated cDNA were hybridized for 16 hr at 45C on a huGene 2.0 St Array Chip. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneChip Scanner G3000 7G
+    </Scan-Protocol>
+    <Description>
+Gene expression data from PC9 NSCLC cells treated with 2µM HCI-2509
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix ® Transcriptome Analysis Console using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 100.
+    </Data-Processing>
+    <Platform-Ref ref="GPL16686" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307401/suppl/GSM3307401_ODE4_4_HuGene-2_0-st_.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307401/suppl/GSM3307401_ODE4_4_HuGene-2_0-st_.rma-gene-full.chp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="53617">
+GSM3307401-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM3307402">
+    <Status database="GEO">
+      <Submission-Date>2018-07-26</Submission-Date>
+      <Release-Date>2018-07-27</Release-Date>
+      <Last-Update-Date>2018-07-27</Last-Update-Date>
+    </Status>
+    <Title>PC9 HCI-2509 rep2</Title>
+    <Accession database="GEO">GSM3307402</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PC9 cells treated with 2µM HCI-2509</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lung
+      </Characteristics>
+      <Treatment-Protocol>
+24hours post plating medium was changed to one containng 2µM HCI-2509. After 48hours, cells were harvested to isolate total RNA
+      </Treatment-Protocol>
+      <Growth-Protocol>
+PC9 cells were cultured in DMEM media supplemented with 10% FCS. Cells were seeded out at a density of 2 x 10^6.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was exctraced using the automated isolation kit AS-1280 (Promega) in the Maxwell-16 (Promega) according to the manufacturer´s protocol.
+      </Extract-Protocol>
+      <Label>None</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according the manufacturer´s protocol of Applause® WT-Amp ST System (NuGene®; San Carlos, USA) using 100ng of total RNA
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+4.1µg of biotinylated cDNA were hybridized for 16 hr at 45C on a huGene 2.0 St Array Chip. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneChip Scanner G3000 7G
+    </Scan-Protocol>
+    <Description>
+Gene expression data from PC9 NSCLC cells treated with 2µM HCI-2509
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix ® Transcriptome Analysis Console using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 100.
+    </Data-Processing>
+    <Platform-Ref ref="GPL16686" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307402/suppl/GSM3307402_ODE4_5_HuGene-2_0-st_.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307402/suppl/GSM3307402_ODE4_5_HuGene-2_0-st_.rma-gene-full.chp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="53617">
+GSM3307402-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM3307403">
+    <Status database="GEO">
+      <Submission-Date>2018-07-26</Submission-Date>
+      <Release-Date>2018-07-27</Release-Date>
+      <Last-Update-Date>2018-07-27</Last-Update-Date>
+    </Status>
+    <Title>PC9 HCI-2509 rep3</Title>
+    <Accession database="GEO">GSM3307403</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>PC9 cells treated with 2µM HCI-2509</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Lung
+      </Characteristics>
+      <Treatment-Protocol>
+24hours post plating medium was changed to one containng 2µM HCI-2509. After 48hours, cells were harvested to isolate total RNA
+      </Treatment-Protocol>
+      <Growth-Protocol>
+PC9 cells were cultured in DMEM media supplemented with 10% FCS. Cells were seeded out at a density of 2 x 10^6.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was exctraced using the automated isolation kit AS-1280 (Promega) in the Maxwell-16 (Promega) according to the manufacturer´s protocol.
+      </Extract-Protocol>
+      <Label>None</Label>
+      <Label-Protocol>
+Biotinylated cDNA was prepared according the manufacturer´s protocol of Applause® WT-Amp ST System (NuGene®; San Carlos, USA) using 100ng of total RNA
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+4.1µg of biotinylated cDNA were hybridized for 16 hr at 45C on a huGene 2.0 St Array Chip. GeneChips were washed and stained in the Affymetrix Fluidics Station 400.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+GeneChips were scanned using the Hewlett-Packard GeneChip Scanner G3000 7G
+    </Scan-Protocol>
+    <Description>
+Gene expression data from PC9 NSCLC cells treated with 2µM HCI-2509
+    </Description>
+    <Data-Processing>
+The data were analyzed with Affymetrix ® Transcriptome Analysis Console using Affymetrix default analysis settings and global scaling as normalization method. The trimmed mean target intensity of each array was arbitrarily set to 100.
+    </Data-Processing>
+    <Platform-Ref ref="GPL16686" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CEL">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307403/suppl/GSM3307403_ODE4_6_HuGene-2_0-st_.CEL.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CHP">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM3307nnn/GSM3307403/suppl/GSM3307403_ODE4_6_HuGene-2_0-st_.rma-gene-full.chp.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>RMA</Description>
+      </Column>
+    <External-Data rows="53617">
+GSM3307403-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE117702">
+    <Status database="GEO">
+      <Submission-Date>2018-07-26</Submission-Date>
+      <Release-Date>2018-07-27</Release-Date>
+      <Last-Update-Date>2019-03-15</Last-Update-Date>
+    </Status>
+    <Title>Expression data of LUAD cell line PC9 treated with 2 uM HCI-2509 for 48 hours</Title>
+    <Accession database="GEO">GSE117702</Accession>
+    <Summary>
+The epigenetic regulator LSD1 is overepxpressed in lung adenocarcinoma (LUAD). HCI-2509 a LSD1 inhibitor leads to growth arrest in in vitro tumor models.
+To identify the underlying molecular mechanims behind LSD1 overexpression, we examined the gene expression patterns using microarray in the LUAD cell line PC9 after HCI-2509 treatment
+    </Summary>
+    <Overall-Design>
+PC9 cells were treated with 2 µM HCI-2509 for 48 h. RNA was exctraced using the automated isolation kit AS-1280 (Promega) in the Maxwell-16 (Promega) with subsequent microarray hybridization.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM3307398" />
+    <Sample-Ref ref="GSM3307399" />
+    <Sample-Ref ref="GSM3307400" />
+    <Sample-Ref ref="GSM3307401" />
+    <Sample-Ref ref="GSM3307402" />
+    <Sample-Ref ref="GSM3307403" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE117nnn/GSE117702/suppl/GSE117702_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA482995" />
+  </Series>
+
+</MINiML>
