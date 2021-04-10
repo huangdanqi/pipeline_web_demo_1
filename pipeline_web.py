@@ -597,7 +597,7 @@ def _excutive_gse(gses, output):
     ## gses is a list containing GSE id
     num=0
     for gse in gses:
-        geo=pd.read_table('gse_gsm_31_v2_out',low_memory=False)
+        geo=pd.read_table('gse_gsm_31_v2_out',low_memory=False,dtype=str)
         find_gse=geo[geo['gse'].isin([str(gse)])]
         find_gse_len=find_gse.shape[0]
         if find_gse_len>0:
@@ -628,7 +628,7 @@ def _excutive_gsm(gsms, output):
     for gsm in gsms:
         num=0
         
-        geo=pd.read_table('gse_gsm_31_v2_out',low_memory=False)
+        geo=pd.read_table('gse_gsm_31_v2_out',low_memory=False,dtype=str)
         find_gsm=geo[geo['gsm'].isin([str(gsm)])]
         find_gsm_len=find_gsm.shape[0]
         
